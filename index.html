@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontro com Deus MAPAF 2026 - Carnê</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        /* Estilos de Impressão */
+        @media print {
+            body { background-color: white; padding: 0; margin: 0; }
+            .no-print { display: none !important; }
+            .ticket-container { 
+                box-shadow: none !important; 
+                border: 1px solid #000 !important;
+                margin-bottom: 20px !important;
+                page-break-inside: avoid;
+            }
+            .page-break { page-break-after: always; }
+        }
+
+        .dotted-line {
+            border-left: 2px dashed #ccc;
+        }
+        
+        .ticket-border {
+            border: 1.5px solid #333;
+        }
+
+        .input-line {
+            border-bottom: 1px solid #000;
+            display: inline-block;
+            min-width: 150px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <!-- Instruções para o Usuário (Não sai na impressão) -->
+    <div class="no-print max-w-4xl mx-auto mb-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded shadow-sm">
+        <h2 class="font-bold text-blue-800">Instruções de Edição:</h2>
+        <p class="text-sm text-blue-700">Este arquivo é um documento HTML completo. Para editar no GitHub, basta alterar os textos dentro das tags. Para imprimir, clique no botão abaixo ou use <strong>Ctrl + P</strong>.</p>
+        <button onclick="window.print()" class="mt-4 bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 shadow-lg">
+            Imprimir Carnê
+        </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- CAPA DO CARNÊ -->
+        <div class="ticket-container bg-white ticket-border p-10 rounded-lg shadow-xl relative overflow-hidden flex flex-col items-center text-center">
+            <!-- Logo MAPAF -->
+            <div class="mb-6">
+                <!-- <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" stroke="#e11d48" stroke-width="2"/>
+                    <path d="M50 15C50 15 25 45 25 70C25 83.8071 36.1929 95 50 95C63.8071 95 75 83.8071 75 70C75 45 50 15 50 15Z" fill="#f97316"/>
+                    <path d="M50 40C50 40 35 58 35 70C35 78.2843 41.7157 85 50 85C58.2843 85 65 78.2843 65 70C65 58 50 40 50 40Z" fill="#fbbf24"/>
+                </svg>-->
+              <!-- Exemplo de como substituir -->
+                   <img src="Logo_MAPAF.png" alt="Logo" class="w-24 h-24 object-contain">
+                <div class="mt-2 text-[12px] font-black uppercase tracking-widest text-gray-800">
+                    Ministério Apostólico<br>Avivamento da Fé
+                </div>
+            </div>
+
+            <div class="bg-yellow-400 py-4 px-8 mb-8 w-full border-y-2 border-black">
+                <h1 class="text-4xl font-black text-black tracking-tight uppercase">Encontro com Deus MAPAF 2026</h1>
+            </div>
+
+            <div class="space-y-4 mb-12">
+                <p class="text-xl italic text-gray-700">"Buscar-me-eis e me achareis quando me buscardes de todo o vosso coração."</p>
+                <p class="text-lg font-bold text-orange-700">Jeremias 29:13</p>
+            </div>
+
+            <div class="w-full max-w-md text-left space-y-4">
+                <div class="flex items-end">
+                    <span class="font-bold mr-2">PARTICIPANTE:</span>
+                    <div class="flex-1 border-b border-black"></div>
+                </div>
+            </div>
+
+            <!-- Detalhe decorativo -->
+            <div class="absolute top-0 right-0 w-24 h-24 bg-orange-500 transform rotate-45 translate-x-12 -translate-y-12"></div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- PARCELA 1 -->
+        <div class="ticket-container bg-white ticket-border flex flex-col md:flex-row h-auto md:h-72 rounded-lg shadow-lg overflow-hidden">
+            <!-- Canhoto (Comprovante) -->
+            <div class="w-full md:w-1/3 p-6 bg-gray-50 flex flex-col justify-between border-b md:border-b-0 md:border-r-2 md:border-dashed border-gray-400">
+                <div>
+                    <h2 class="font-black text-sm uppercase mb-4 border-b-2 border-black pb-1">Comprovante de Pagamento</h2>
+                    <p class="text-xs font-bold text-orange-600 mb-4">Parcela 01/02 - Encontro 2026</p>
+                    <div class="space-y-3 text-[11px]">
+                        <div><strong>NOME:</strong> <div class="input-line w-full"></div></div>
+                        <div class="flex justify-between">
+                            <div><strong>VALOR:</strong> R$ 25,00</div>
+                            <div><strong>DATA:</strong> __/__/__</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="border-t border-black text-[10px] text-center pt-1 font-bold">Assinatura Responsável</div>
+                </div>
+            </div>
+
+            <!-- Corpo Principal -->
+            <div class="flex-1 p-6 flex flex-col justify-between">
+                <div class="flex justify-between items-start">
+                    <div class="flex items-center gap-3">
+                        <svg width="45" height="45" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="48" stroke="#e11d48" stroke-width="2"/>
+                            <path d="M50 15C50 15 25 45 25 70C25 83.8071 36.1929 95 50 95C63.8071 95 75 83.8071 75 70C75 45 50 15 50 15Z" fill="#f97316"/>
+                        </svg>
+                        <div class="text-[10px] font-bold uppercase leading-tight">
+                            MAPAF - Encontro com Deus 2026
+                        </div>
+                    </div>
+                    <div class="bg-black text-white px-4 py-1 text-xs font-bold">PARCELA 01/02</div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 my-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center"><span class="font-bold text-sm w-20">VALOR:</span> <span class="text-lg font-black">R$ 25,00</span></div>
+                        <div class="flex items-center"><span class="font-bold text-sm w-20">VENC.:</span> <span class="input-line flex-1"></span></div>
+                    </div>
+                    <div class="border-l-2 border-gray-200 pl-6">
+                        <p class="text-[10px] font-black uppercase mb-2">Forma de Pagamento:</p>
+                        <div class="space-y-2 text-xs">
+                            <label class="flex items-center cursor-pointer">
+                                <div class="w-5 h-5 border-2 border-black mr-2 flex items-center justify-center"></div> ( ) PIX
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <div class="w-5 h-5 border-2 border-black mr-2 flex items-center justify-center"></div> ( ) DINHEIRO
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-[10px] italic text-gray-500 text-center border-t pt-2">
+                    "Tudo o que fizerem, façam de todo o coração, como para o Senhor." - Colossenses 3:23
+                </div>
+            </div>
+        </div>
+
+        <!-- PARCELA 2 -->
+        <div class="ticket-container bg-white ticket-border flex flex-col md:flex-row h-auto md:h-72 rounded-lg shadow-lg overflow-hidden">
+            <!-- Canhoto (Comprovante) -->
+            <div class="w-full md:w-1/3 p-6 bg-gray-50 flex flex-col justify-between border-b md:border-b-0 md:border-r-2 md:border-dashed border-gray-400">
+                <div>
+                    <h2 class="font-black text-sm uppercase mb-4 border-b-2 border-black pb-1">Comprovante de Pagamento</h2>
+                    <p class="text-xs font-bold text-orange-600 mb-4">Parcela 02/02 - Encontro 2026</p>
+                    <div class="space-y-3 text-[11px]">
+                        <div><strong>NOME:</strong> <div class="input-line w-full"></div></div>
+                        <div class="flex justify-between">
+                            <div><strong>VALOR:</strong> R$ 25,00</div>
+                            <div><strong>DATA:</strong> __/__/__</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="border-t border-black text-[10px] text-center pt-1 font-bold">Assinatura Responsável</div>
+                </div>
+            </div>
+
+            <!-- Corpo Principal -->
+            <div class="flex-1 p-6 flex flex-col justify-between">
+                <div class="flex justify-between items-start">
+                    <div class="flex items-center gap-3">
+                        <svg width="45" height="45" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="48" stroke="#e11d48" stroke-width="2"/>
+                            <path d="M50 15C50 15 25 45 25 70C25 83.8071 36.1929 95 50 95C63.8071 95 75 83.8071 75 70C75 45 50 15 50 15Z" fill="#f97316"/>
+                        </svg>
+                        <div class="text-[10px] font-bold uppercase leading-tight">
+                            MAPAF - Encontro com Deus 2026
+                        </div>
+                    </div>
+                    <div class="bg-black text-white px-4 py-1 text-xs font-bold">PARCELA 02/02</div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 my-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center"><span class="font-bold text-sm w-20">VALOR:</span> <span class="text-lg font-black">R$ 25,00</span></div>
+                        <div class="flex items-center"><span class="font-bold text-sm w-20">VENC.:</span> <span class="input-line flex-1"></span></div>
+                    </div>
+                    <div class="border-l-2 border-gray-200 pl-6">
+                        <p class="text-[10px] font-black uppercase mb-2">Forma de Pagamento:</p>
+                        <div class="space-y-2 text-xs">
+                            <label class="flex items-center cursor-pointer">
+                                <div class="w-5 h-5 border-2 border-black mr-2 flex items-center justify-center"></div> ( ) PIX
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <div class="w-5 h-5 border-2 border-black mr-2 flex items-center justify-center"></div> ( ) DINHEIRO
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-[10px] italic text-gray-500 text-center border-t pt-2">
+                    "Onde dois ou três estão reunidos em meu nome, ali estou eu no meio deles." - Mateus 18:20
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="no-print mt-12 text-center text-gray-400 text-sm">
+        Desenvolvido para Ministério Apostólico Avivamento da Fé - MAPAF © 2026
+    </footer>
+
+</body>
+</html>
